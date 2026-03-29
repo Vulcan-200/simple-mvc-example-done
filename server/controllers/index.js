@@ -317,8 +317,7 @@ const createDog = async (req, res) =>
   try
   {
     await newDog.save();
-    return res.status(201).json
-    (
+    return res.status(201).json(
       {
         name: newDog.name,
         breed: newDog.breed,
@@ -362,8 +361,7 @@ const increaseAge = async (req, res) =>
   try
   {
     await dog.save();
-    return res.json
-    (
+    return res.json(
       {
         name: dog.name,
         breed: dog.breed,
