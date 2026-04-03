@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "A simple Express MVC using only static files",
   "main": "./server/app.js",
+  "engines":{
+    "node": "18.x"
+  },
   "scripts": {
     "nodemon": "nodemon --watch ./server ./server/app.js",
     "start": "node ./server/app.js",
